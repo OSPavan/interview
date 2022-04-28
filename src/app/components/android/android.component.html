@@ -1,12 +1,14 @@
-<div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" *ngFor="let quetion of questions;let i =index ">
-        <img src="assets/icons/android.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-        <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-                <h6 class="mb-0">{{i+1}}. {{quetion}}</h6>
-                <p class="mb-0 opacity-75">Answers will come soon!</p>
-            </div>
-            <small class="opacity-50 text-nowrap">now</small>
-        </div>
-    </a>
-</div>
+<mat-accordion class="list-group">
+    <mat-expansion-panel class="list-group-item list-group-item-action  gap-3 py-3" aria-current="true"  *ngFor="let quetion of questions;let i =index ">
+      <mat-expansion-panel-header class="p-0 " >
+        <mat-panel-title>
+            <img src="assets/icons/android.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" style="margin-right: 1rem;" >
+            <h6 class="mb-0 mt-2" >{{i+1}}. {{quetion}}</h6>
+        </mat-panel-title>
+        <!-- <mat-panel-description>
+          This is a description
+        </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <p>This is the primary answer of the panel.</p>
+    </mat-expansion-panel>
+</mat-accordion>
