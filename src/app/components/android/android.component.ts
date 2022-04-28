@@ -12,7 +12,6 @@ export class AndroidComponent implements OnInit {
   ngOnInit(): void {
   }
   questions: any = [
-    
       'What are the components in android?',
       'What is an asset?',
       'What all dimensions of assets are there in android?',
@@ -34,8 +33,6 @@ export class AndroidComponent implements OnInit {
       'How to choose between services and threads?',
       'What are the components bind to services?',
  '     Different between services and intent services?',
-      
-      
      ' How does and intent service works? When will it be killed?',
       'Which parameters are to be taken care while uploading an app to playstore?',
      ' What is an 9-Patch image and webP?',
@@ -55,8 +52,7 @@ export class AndroidComponent implements OnInit {
     '  What is ANR? How do you avoid it?',
       'What are pending intent?',
    '   What are Sticky intent?',
- '     Lunch Modes in Android?'
-    
+ 'Launch Modes in Android?'
   ]
 
 }
